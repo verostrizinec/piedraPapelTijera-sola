@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego - Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">
+            Piedra, Papel o Tijera
+        </h1>
+        <p class="subtitulo">
+            ¡El clásico juego para definir muchos comienzos!
+        </p>
+    </header>
+    <main>
+        <p class="instrucciones" id="instrucciones">
+            El primero en llegar a los 5 puntos gana la partida.
+        </p>
+        <div class="marcador">
+            <p class="nombre nombre-jugador">Jugador</p>
+            <p class="nombre nombre-computadora">Computadora</p>
+            <p class="puntos">
+                <span class="puntos-usuario">0</span>
+                <span>-</span>
+                <span class="puntos-computadora">0</span>
+            </p>
+        </div>
+        <div class="elegi-tu-arma" id="elegi-tu-arma">
+            <h2>Elegi tu arma para jugar</h2>
+            <div class="armas">
+                <button class="arma" id="piedra">
+                    <img src="./icon/piedra.png" alt="Piedra" width="50">
+                </button>
+                <button class="arma" id="papel">
+                    <img src="./icon/papel.png" alt="Papel" width="50">
+                </button>
+                <button class="arma" id="tijera">
+                    <img src="./icon/tijera.png" alt="Tijera" width="50">
+                </button>
+            </div>
+        </div>
+        <div class="mensaje disabled" id="mensaje">
+            <p>
+                Usaste <span class="eleccion" id="eleccion-usuario">papel</span><br>
+                y la computadora usó <span class="eleccion" id="eleccion-computadora">piedra</span>
+            </p>
+            <p id="gana-punto">Ganaste un punto! 🎉</p>
+        </div>
+        <button class="btn disabled" id="reiniciar">Reiniciar el juego</button>
+    </main>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
